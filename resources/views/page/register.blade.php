@@ -77,7 +77,7 @@
                             <label class="alert-danger"><?php echo $errors->register->first('profilefor'); ?></label>
                           </div>
                           <div class="form-group">
-                            <label class="control-label">Name</label>
+                            <label class="control-label">Candidate Name</label>
                             <input value="<?php echo old('name'); ?>" id="name" name="name" type="text" placeholder="" class="form-control">
                             <label class="alert-danger"><?php echo $errors->register->first('name'); ?></label>
                           </div>
@@ -273,12 +273,12 @@
                           </div>
 
                           <div class="form-group ">
-                            <label class="control-label">Weight</label>
+                            <label class="control-label">Weight (kg)</label>
                             <input value="<?php echo old('weight'); ?>" type="text" name="weight" id="weight" class="form-control">
                           </div>
 
                           <div class="form-group">
-                            <label class="control-label">Colour</label>
+                            <label class="control-label">Complex</label>
                             <select id="colour" name="colour" data-placeholder="-Select-" class="form-control js-in-select">
 @if (old('colour') != "")
 <option value="<?php echo old('colour'); ?>"><?php echo old('colour'); ?></option>
