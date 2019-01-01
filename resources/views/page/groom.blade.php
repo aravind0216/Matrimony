@@ -53,21 +53,21 @@
                         <div class="listing__item">
                           <div class="properties properties--grid">
                             <div class="properties__thumb"><a href="#" class="item-photo item-photo--static">
-<?php if($row->url != ""){ ?>
-    <img style="width: 277px;height: 180px;" src="{{asset('uploads/').'/'.$row->url}}" alt="">
-<?php } else{ ?>
-  <img style="width: 277px;height: 180px;" src="assets/media-demo/avatars/01.jpg" alt="">
-<?php } ?>
+                              <?php if($row->url != ""){ ?>
+                                <img style="width: 277px;height: 180px;" src="{{asset('uploads/').'/'.$row->url}}" alt="">
+                              <?php } else{ ?>
+                                <img style="width: 277px;height: 180px;" src="assets/media-demo/avatars/01.jpg" alt="">
+                              <?php } ?>
                                 
-                                <figure class="item-photo__hover"><span class="item-photo__more">View Details</span></figure></a></div>
+                              <figure class="item-photo__hover"><span class="item-photo__more">View Details</span></figure></a></div>
                             <div class="properties__info">
-                                <a href="#" class="properties__address properties__address--simple">
+                              <a href="#" class="properties__address properties__address--simple">
                                 <span class="properties__address-street"><?php echo $row->name; ?>(<?php echo $row->userid; ?>)</span>
                                 <span class="properties__address-city"><?php echo $row->age; ?> Yrs</span>
                                 <span class="properties__address-city"><?php echo $row->subcaste; ?></span>
                                 <span class="properties__address-city"><?php echo $row->education; ?></span>
                                 <span class="properties__address-city"><?php echo $row->district; ?></span>
-                                </a>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -93,11 +93,11 @@
                         <div data-sr="enter bottom move 80px, scale(0), over 0s" data-animate-end="animate-end" class="worker js-unhide-block vcard worker--sidebar">
                           <div class="worker__photo">
                             <a href="#" class=" ">
-<?php if($row->url != ""){ ?>
-    <img style="width: 200px;height: 100px;" src="{{asset('uploads/').'/'.$row->url}}" alt="" class="photo">
-<?php } else{ ?>
-  <img src="assets/media-demo/workers/worker-1.jpg" alt="" class="photo"/>
-<?php } ?>
+                              <?php if($row->url != ""){ ?>
+                                <img style="width: 200px;height: 100px;" src="{{asset('uploads/').'/'.$row->url}}" alt="" class="photo">
+                              <?php } else{ ?>
+                                <img style="width: 200px;height: 100px;" src="assets/media-demo/workers/worker-1.jpg" alt="" class="photo"/>
+                              <?php } ?>
                               <figure class="item-photo__hover">
                                 <span class="item-photo__more">View</span>
                               </figure>

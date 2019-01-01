@@ -695,11 +695,11 @@
                         <div data-sr="enter bottom move 80px, scale(0), over 0s" data-animate-end="animate-end" class="worker js-unhide-block vcard worker--sidebar">
                           <div class="worker__photo">
                             <a href="#" class="">
-<?php if($row->url != ""){ ?>
-    <img style="width: 200px;height: 100px;" src="{{asset('uploads/').'/'.$row->url}}" alt="" class="photo">
-<?php } else { ?>
-  <img style="width: 200px;height: 100px;" src="assets/media-demo/workers/worker-1.jpg" alt="" class="photo"/>
-<?php } ?>
+                              <?php if($row->url != ""){ ?>
+                                <img style="width: 200px;height: 100px;" src="{{asset('uploads/').'/'.$row->url}}" alt="" class="photo">
+                              <?php } else { ?>
+                                <img style="width: 200px;height: 100px;" src="assets/media-demo/workers/worker-1.jpg" alt="" class="photo"/>
+                              <?php } ?>
                               <figure class="item-photo__hover">
                                 <span class="item-photo__more">View</span>
                               </figure>

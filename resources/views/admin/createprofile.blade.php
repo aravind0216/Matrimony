@@ -331,11 +331,11 @@
                           <div class="form-group">
                             <label class="control-label">Physical Status</label>
                             <select id="physicalstatus" name="physicalstatus" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('physicalstatus') != "")
-<option value="<?php echo old('physicalstatus'); ?>"><?php echo old('physicalstatus'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                              @if (old('physicalstatus') != "")
+                                <option value="<?php echo old('physicalstatus'); ?>"><?php echo old('physicalstatus'); ?></option>
+                              @else
+                                <option value="">-Select-</option>
+                              @endif
                               <option>Normal</option>
                               <option>Differently Abled</option>
                             </select>
@@ -417,11 +417,11 @@
                           <div class="form-group form-group--col-3">
                             <label class="control-label">No Of Brother's</label>
                             <select id="noofbrothers" name="noofbrothers" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('noofbrothers') != "")
-<option value="<?php echo old('noofbrothers'); ?>"><?php echo old('noofbrothers'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                              @if (old('noofbrothers') != "")
+                                <option value="<?php echo old('noofbrothers'); ?>"><?php echo old('noofbrothers'); ?></option>
+                              @else
+                                <option value="">-Select-</option>
+                              @endif
                               <?php for ($i=1; $i <= 10; $i++) {  ?>
                                <option><?php echo $i; ?></option>
                               <?php } ?>
@@ -431,11 +431,11 @@
                           <div class="form-group form-group--col-3">
                             <label class="control-label">No Of Brother's Married</label>
                             <select id="noofbrothersmarried" name="noofbrothersmarried" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('noofbrothersmarried') != "")
-<option value="<?php echo old('noofbrothersmarried'); ?>"><?php echo old('noofbrothersmarried'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                              @if (old('noofbrothersmarried') != "")
+                                <option value="<?php echo old('noofbrothersmarried'); ?>"><?php echo old('noofbrothersmarried'); ?></option>
+                              @else
+                                <option value="">-Select-</option>
+                              @endif
                               <?php for ($i=1; $i <= 10; $i++) {  ?>
                                <option><?php echo $i; ?></option>
                               <?php } ?>
@@ -445,11 +445,11 @@
                           <div class="form-group form-group--col-3">
                             <label class="control-label">No Of Sister's</label>
                             <select id="noofsisters" name="noofsisters" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('noofsisters') != "")
-<option value="<?php echo old('noofsisters'); ?>"><?php echo old('noofsisters'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                              @if (old('noofsisters') != "")
+                                <option value="<?php echo old('noofsisters'); ?>"><?php echo old('noofsisters'); ?></option>
+                              @else
+                                <option value="">-Select-</option>
+                              @endif
                               <?php for ($i=1; $i <= 10; $i++) {  ?>
                                <option><?php echo $i; ?></option>
                               <?php } ?>
