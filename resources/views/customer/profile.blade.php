@@ -65,7 +65,7 @@
                </select>
             </div>
             <div class="form-group">
-              <label class="control-label">Name</label>
+              <label class="control-label">Candidate Name</label>
               <input value="<?php echo $row->name; ?>" id="name" name="name" type="text" placeholder="" class="form-control">
             </div>
 
@@ -135,7 +135,7 @@
 
                           <div class="form-group form-group--col-3">
                             <label class="control-label">Educational Description</label>
-                            <textarea style="height: 80px;" rows="2" id="educationdes" name="educationdes" data-parsley-trigger="keyup" data-parsley-minlength="100" data-parsley-validation-threshold="1" data-parsley-minlength-message="You need to enter at least a 100 caracters long comment.." class="form-control"><?php echo $row->educationdes; ?></textarea>
+                            <textarea style="height: 80px;" rows="2" id="educationdes" name="educationdes" class="form-control"><?php echo $row->educationdes; ?></textarea>
                           </div>
 
                           <div class="form-group">
@@ -151,7 +151,7 @@
 
                           <div class="form-group">
                             <label class="control-label">Job Description</label>
-                            <textarea style="height: 80px;" rows="2" id="jobdes" name="jobdes" data-parsley-trigger="keyup" data-parsley-minlength="50" data-parsley-validation-threshold="1" data-parsley-minlength-message="You need to enter at least a 50 caracters long comment.." class="form-control"><?php echo $row->jobdes; ?></textarea>
+                            <textarea style="height: 80px;" rows="2" id="jobdes" name="jobdes" class="form-control"><?php echo $row->jobdes; ?></textarea>
                           </div>
                           <div class="form-group">
                             <label class="control-label">Company Name</label>
@@ -163,7 +163,36 @@
                           </div>
                           <div class="form-group">
                             <label class="control-label">Annual Income</label>
-                            <input value="<?php echo $row->income; ?>" type="text" name="income" id="income" class="form-control">
+                            <select id="income" name="income" data-placeholder="-Select-" class="form-control js-in-select">
+                              <option><?php echo $row->income; ?></option>
+                              <option>0 - 1 Lakh</option>
+                              <option>1 - 2 Lakhs</option>
+                              <option>2 - 3 Lakhs</option>
+                              <option>3 - 4 Lakhs</option>
+                              <option>4 - 5 Lakhs</option>
+                              <option>5 - 6 Lakhs</option>
+                              <option>6 - 7 Lakhs</option>
+                              <option>7 - 8 Lakhs</option>
+                              <option>8 - 9 Lakhs</option>
+                              <option>9 - 10 Lakhs</option>
+                              <option>10 - 12 Lakhs</option>
+                              <option>12 - 14 Lakhs</option>
+                              <option>14 - 16 Lakhs</option>
+                              <option>16 - 18 Lakhs</option>
+                              <option>18 - 20 Lakhs</option>
+                              <option>20 - 25 Lakhs</option>
+                              <option>25 - 30 Lakhs</option>
+                              <option>30 - 35 Lakhs</option>
+                              <option>35 - 40 Lakhs</option>
+                              <option>40 - 45 Lakhs</option>
+                              <option>45 - 50 Lakhs</option>
+                              <option>50 - 60 Lakhs</option>
+                              <option>60 - 70 Lakhs</option>
+                              <option>70 - 80 Lakhs</option>
+                              <option>80 - 90 Lakhs</option>
+                              <option>90 Lakhs - 1 Crore</option>
+                              <option>1 Crore & Above</option>
+                            </select>
                           </div>
                           <div class="form-group">
                             <label class="control-label">Blood Group</label>
@@ -202,15 +231,23 @@
 
                           <div class="form-group ">
                             <label class="control-label">Height</label>
-                            <input value="<?php echo $row->height; ?>" type="text" name="height" id="height" class="form-control">
+                            <select id="height" name="height" data-placeholder="-Select-" class="form-control js-in-select">
+                              <option><?php echo $row->height; ?></option>
+                              <option value='0'>--Cms--</option>
+                              <?php 
+                              for($i=137; $i<=213; $i++){
+                              ?>
+                              <option>{{$i}} cms</option>
+                            <?php } ?>
+                            </select>
                           </div>
 
                           <div class="form-group ">
-                            <label class="control-label">Weight</label>
+                            <label class="control-label">Weight (kg)</label>
                             <input value="<?php echo $row->weight; ?>" type="text" name="weight" id="weight" class="form-control">
                           </div>
                           <div class="form-group">
-                            <label class="control-label">Colour</label>
+                            <label class="control-label">Complex</label>
                             <select id="colour" name="colour" data-placeholder="-Select-" class="form-control js-in-select">
                               <option value="<?php echo $row->colour; ?>"><?php echo $row->colour; ?></option>
                               <option>Very Fair</option>
@@ -221,7 +258,7 @@
                             </select>
                           </div>
                           <div class="form-group ">
-                            <label class="control-label">Languages known</label>
+                            <label class="control-label">Languages known <span style="font-size: 12px;text-transform: capitalize;">(Ex., Tamil,English)</span></label>
                             <input value="<?php echo $row->language; ?>" type="text" name="language" id="language" class="form-control">
                           </div>
 
@@ -230,7 +267,7 @@
                             <select id="physicalstatus" name="physicalstatus" data-placeholder="-Select-" class="form-control js-in-select">
                               <option value="<?php echo $row->physicalstatus; ?>"><?php echo $row->physicalstatus; ?></option>
                               <option>Normal</option>
-                              <option>Physically Challenged</option>
+                              <option>Differently Abled</option>
                             </select>
                           </div>
 

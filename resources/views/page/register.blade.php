@@ -102,11 +102,11 @@
                           <div class="form-group">
                             <label class="control-label">Gender</label>
                             <select id="gender" name="gender" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('gender') != "")
-<option value="<?php echo old('gender'); ?>"><?php echo old('gender'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                              @if (old('gender') != "")
+                                <option value="<?php echo old('gender'); ?>"><?php echo old('gender'); ?></option>
+                              @else
+                                <option value="">-Select-</option>
+                              @endif
                               <option value="Male">Male</option>
                               <option value="Female">Female</option>
                             </select>
@@ -134,11 +134,11 @@
                           <div class="form-group">
                             <label class="control-label">Caste</label>
                             <select id="caste" name="caste" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('caste') != "")
-<option value="<?php echo old('caste'); ?>"><?php echo old('caste'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                              @if (old('caste') != "")
+                                <option value="<?php echo old('caste'); ?>"><?php echo old('caste'); ?></option>
+                              @else
+                                <option value="">-Select-</option>
+                              @endif
                               <option>Vellalar Pillai</option>
                             </select>
                             <label class="alert-danger"><?php echo $errors->register->first('caste'); ?></label>
@@ -146,11 +146,11 @@
                           <div class="form-group">
                             <label class="control-label">Sub Caste</label>
                             <select id="subcaste" name="subcaste" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('subcaste') != "")
-<option value="<?php echo old('subcaste'); ?>"><?php echo old('subcaste'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                @if (old('subcaste') != "")
+                <option value="<?php echo old('subcaste'); ?>"><?php echo old('subcaste'); ?></option>
+                @else
+                <option value="">-Select-</option>
+                @endif
                 <option>Karuneegar Pillai</option>
                 <option>Thirunelveli Saiva Pillai</option>
                 <option>Thuluva Vellalar</option>
@@ -186,7 +186,7 @@
 
                           <div class="form-group form-group--col-12">
                             <label class="control-label">Educational Description</label>
-                            <textarea style="height: 80px;" rows="2" id="educationdes" name="educationdes" data-parsley-trigger="keyup" data-parsley-minlength="100" data-parsley-validation-threshold="1" data-parsley-minlength-message="You need to enter at least a 100 caracters long comment.." class="form-control"><?php echo old('educationdes'); ?></textarea>
+                            <textarea style="height: 80px;" rows="2" id="educationdes" name="educationdes" class="form-control"><?php echo old('educationdes'); ?></textarea>
                           </div>
 
                           <div class="form-group">
@@ -208,7 +208,7 @@
 
                           <div class="form-group">
                             <label class="control-label">Job Description</label>
-                            <textarea style="height: 80px;" rows="2" id="jobdes" name="jobdes" data-parsley-trigger="keyup" data-parsley-minlength="50" data-parsley-validation-threshold="1" data-parsley-minlength-message="You need to enter at least a 50 caracters long comment.." class="form-control"><?php echo old('jobdes'); ?></textarea>
+                            <textarea style="height: 80px;" rows="2" id="jobdes" name="jobdes" data-parsley-trigger="keyup" class="form-control"><?php echo old('jobdes'); ?></textarea>
                           </div>
                           <div class="form-group">
                             <label class="control-label">Company Name</label>
@@ -221,7 +221,40 @@
                           </div>
                           <div class="form-group">
                             <label class="control-label">Annual Income</label>
-                            <input value="<?php echo old('income'); ?>" type="text" name="income" id="income" class="form-control">
+                            <select id="income" name="income" data-placeholder="-Select-" class="form-control js-in-select">
+                              @if (old('income') != "")
+                              <option value="<?php echo old('income'); ?>"><?php echo old('income'); ?></option>
+                              @else
+                                <option value="">-Select-</option>
+                              @endif
+                              <option>0 - 1 Lakh</option>
+                              <option>1 - 2 Lakhs</option>
+                              <option>2 - 3 Lakhs</option>
+                              <option>3 - 4 Lakhs</option>
+                              <option>4 - 5 Lakhs</option>
+                              <option>5 - 6 Lakhs</option>
+                              <option>6 - 7 Lakhs</option>
+                              <option>7 - 8 Lakhs</option>
+                              <option>8 - 9 Lakhs</option>
+                              <option>9 - 10 Lakhs</option>
+                              <option>10 - 12 Lakhs</option>
+                              <option>12 - 14 Lakhs</option>
+                              <option>14 - 16 Lakhs</option>
+                              <option>16 - 18 Lakhs</option>
+                              <option>18 - 20 Lakhs</option>
+                              <option>20 - 25 Lakhs</option>
+                              <option>25 - 30 Lakhs</option>
+                              <option>30 - 35 Lakhs</option>
+                              <option>35 - 40 Lakhs</option>
+                              <option>40 - 45 Lakhs</option>
+                              <option>45 - 50 Lakhs</option>
+                              <option>50 - 60 Lakhs</option>
+                              <option>60 - 70 Lakhs</option>
+                              <option>70 - 80 Lakhs</option>
+                              <option>80 - 90 Lakhs</option>
+                              <option>90 Lakhs - 1 Crore</option>
+                              <option>1 Crore & Above</option>
+                            </select>
                           </div>
                           <div class="form-group">
                             <label class="control-label">Blood Group</label>
@@ -269,7 +302,18 @@
 
                           <div class="form-group ">
                             <label class="control-label">Height</label>
-                            <input value="<?php echo old('height'); ?>" type="text" name="height" id="height" class="form-control">
+                            <select id="height" name="height" data-placeholder="-Select-" class="form-control js-in-select">
+                              @if (old('height') != "")
+                              <option value="<?php echo old('height'); ?>"><?php echo old('height'); ?></option>
+                              @else
+                              <option value="">-Select-</option>
+                              @endif
+                              <?php 
+                              for($i=137; $i<=213; $i++){
+                              ?>
+                              <option>{{$i}} cms</option>
+                            <?php } ?>
+                            </select>
                           </div>
 
                           <div class="form-group ">
@@ -294,20 +338,20 @@
                           </div>
 
                           <div class="form-group ">
-                            <label class="control-label">Languages known</label>
+                            <label class="control-label">Languages known <span style="font-size: 12px;text-transform: capitalize;">(Ex., Tamil,English)</span></label>
                             <input value="<?php echo old('language'); ?>" type="text" name="language" id="language" class="form-control">
                           </div>
 
                           <div class="form-group">
                             <label class="control-label">Physical Status</label>
                             <select id="physicalstatus" name="physicalstatus" data-placeholder="-Select-" class="form-control js-in-select">
-@if (old('physicalstatus') != "")
-<option value="<?php echo old('physicalstatus'); ?>"><?php echo old('physicalstatus'); ?></option>
-@else
-      <option value="">-Select-</option>
-@endif
+                              @if (old('physicalstatus') != "")
+                              <option value="<?php echo old('physicalstatus'); ?>"><?php echo old('physicalstatus'); ?></option>
+                              @else
+                                    <option value="">-Select-</option>
+                              @endif
                               <option>Normal</option>
-                              <option>Physically Challenged</option>
+                              <option>Differently Abled</option>
                             </select>
                             <label class="alert-danger"><?php echo $errors->register->first('physicalstatus'); ?></label>
                           </div>

@@ -16,7 +16,7 @@
           <div class="container">
             <div class="row">
               <header class="site__header">
-                <h1 class="site__title site__title--center">Settings</h1>
+                <h1 class="site__title site__title--center">Change Password</h1>
               </header>
               <!-- BEGIN LISTING-->
               <div class="site site--dashboard">

@@ -52,7 +52,7 @@
                         <li class="nav__item"><a href="/adminsettings" class="nav__link">
                             <svg class="nav__icon">
                               <use xlink:href="#icon-property-edit"></use>
-                            </svg>Settings</a>
+                            </svg>Change Password</a>
                         </li>
                         <li class="nav__item"><a href="/logout" class="nav__link">
                             <svg class="nav__icon">
