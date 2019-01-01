@@ -564,27 +564,29 @@
                           <input value="<?php echo old('day'); ?>" type="text" name="day" id="day" class="form-control">
                         </div>
                       </div>  
-<div class="row">
-    <div style="text-align: center;" class="col-md-12"><br>ஜாதக கட்டம் : ஜாதக கட்டத்தை நிரப்ப கீழே உள்ள வார்த்தைகளை பயன்படுத்தவும்.</div>
-</div>
-<div class="row" style="margin-top: 1em;text-align:center;">
-  <div class="col-xs-0 col-md-1 "></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">புதன் : </span><span class="col2">pu</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சூரியன் : </span><span class="col2">sun</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">ராகு : </span><span class="col2">ragu</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">வியாழன் : </span><span class="col2">vij</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சுக்கிரன் : </span><span class="col2">chk</span></div>
-  <div class="col-xs-0 col-md-1 "></div>
-</div>
-<div class="row" style="margin-top: 1em;text-align:center;">
-  <div class="col-xs-0 col-md-1 "></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சனி : </span><span class="col2">sat</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சந்திரன் : </span><span class="col2">chan</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">கேது : </span><span class="col2">kee</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">செவ்வாய் : </span><span class="col2">sev</span></div>
-  <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">லக்கனம் : </span><span class="col2">lac</span></div>
-  <div class="col-xs-0 col-md-1 "></div>
-</div>
+
+          <div class="row">
+            <div style="text-align:center;" class="col-md-12"><br>ஜாதக கட்டம் : ஜாதக கட்டத்தை நிரப்ப கீழே உள்ள வார்த்தைகளை பயன்படுத்தவும்.</div>
+          </div>
+          <div class="row" style="margin-top: 1em;text-align:center;">
+            <div class="col-xs-0 col-md-1 "></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">புதன் : </span><span class="col2">pu</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சூரியன் : </span><span class="col2">sun</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">ராகு : </span><span class="col2">ragu</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">வியாழன் : </span><span class="col2">vij</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சுக்கிரன் : </span><span class="col2">chk</span></div>
+            <div class="col-xs-0 col-md-1 "></div>
+          </div>
+          <div class="row" style="margin-top: 1em;text-align:center;">
+            <div class="col-xs-0 col-md-1 "></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சனி : </span><span class="col2">sat</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">சந்திரன் : </span><span class="col2">chan</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">கேது : </span><span class="col2">kee</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">செவ்வாய் : </span><span class="col2">sev</span></div>
+            <div class="col-xs-6 col-md-2 " style="text-align:center;"><span class="col1">லக்கனம் : </span><span class="col2">lac</span></div>
+            <div class="col-xs-0 col-md-1 "></div>
+          </div>
+
           <div class="row">
             <div class="col-md-2 "></div>
             <div class=" col-xs-6 col-sm-6 col-md-4  text-center">
@@ -613,32 +615,32 @@
               </table>
             </div>
             <div class=" col-xs-12 col-sm-6 col-md-4  text-center">
-                      <table border="0" cellpadding="5" style="border-collapse: collapse" height="200">
-                          <tr>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am1" id="am1"><?php echo old('am1'); ?></textarea></td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am2" id="am2"><?php echo old('am2'); ?></textarea></td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5"  name="am3" id="am3"><?php echo old('am3'); ?></textarea></td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5"  name="am4" id="am4"><?php echo old('am4'); ?></textarea></td>
-                          </tr>
-                          <tr>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5"  name="am5" id="am5"><?php echo old('am5'); ?></textarea></td>
-                            <td height="100" colspan="2" rowspan="2" align="center">அம்சம்</td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am6" id="am6"><?php echo old('am6'); ?></textarea></td>
-                          </tr>
-                          <tr>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am7" id="am7"><?php echo old('am7'); ?></textarea></td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am8" id="am8"><?php echo old('am8'); ?></textarea></td>
-                          </tr>
-                          <tr>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am9" id="am9"><?php echo old('am9'); ?></textarea></td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am10" id="am10"><?php echo old('am10'); ?></textarea></td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am11" id="am11"><?php echo old('am11'); ?></textarea></td>
-                            <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am12" id="am12"><?php echo old('am12'); ?></textarea></td>
-                          </tr>
-                        </table>
-                  </div>
-                <div class="col-md-2 "></div>
-              </div>
+              <table border="0" cellpadding="5" style="border-collapse: collapse" height="200">
+                <tr>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am1" id="am1"><?php echo old('am1'); ?></textarea></td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am2" id="am2"><?php echo old('am2'); ?></textarea></td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5"  name="am3" id="am3"><?php echo old('am3'); ?></textarea></td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5"  name="am4" id="am4"><?php echo old('am4'); ?></textarea></td>
+                </tr>
+                <tr>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5"  name="am5" id="am5"><?php echo old('am5'); ?></textarea></td>
+                  <td height="100" colspan="2" rowspan="2" align="center">அம்சம்</td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am6" id="am6"><?php echo old('am6'); ?></textarea></td>
+                </tr>
+                <tr>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am7" id="am7"><?php echo old('am7'); ?></textarea></td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am8" id="am8"><?php echo old('am8'); ?></textarea></td>
+                </tr>
+                <tr>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am9" id="am9"><?php echo old('am9'); ?></textarea></td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am10" id="am10"><?php echo old('am10'); ?></textarea></td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am11" id="am11"><?php echo old('am11'); ?></textarea></td>
+                  <td><textarea style="overflow: hidden;" rows="3" cols="5" name="am12" id="am12"><?php echo old('am12'); ?></textarea></td>
+                </tr>
+              </table>
+            </div>
+          <div class="col-md-2 "></div>
+        </div>
 
 <br>
 
